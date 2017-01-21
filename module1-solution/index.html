@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>My first AngularJS App</title>
+    <title>My first AngularJS Assigment</title>
   </head>
   <body>
     <div ng-controller="MyFirstController">
-      {{sayHello()}} {{name}};
-    <input type="text" size=60  ng-model="name">
-    Inside my input is: {{name}}
-    </div>
+      {{what_food()}};
+    <input type="text" size=60  ng-model="food">
+    <button ng-click="ile()"> Check if too much </button>
+    <p style="color:red;">{{result_txt}}</p>
+
   </body>
 </html>
