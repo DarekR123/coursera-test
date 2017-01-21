@@ -9,7 +9,7 @@ angular.module('myFirstApp', [])
 $scope.food = "";
 $scope.result_txt = "--->";
 $scope.what_food = function() {
-  return "What do you eat for lunch? (enter separately with koma ',' sing)";
+  return "What do you eat for lunch? (enter separately with coma ',' )";
 }
 
 $scope.ile = function(){
