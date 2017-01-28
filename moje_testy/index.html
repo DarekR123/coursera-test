@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app = "my_module">
+<head>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="appka.js"></script>
+</head>
+<body >
+  <div ng-controller = "my_controller">
+    <p>{{name}}</p>
+    <input type="text" ng-model = "name" ng-keyup = 'policz();'>
+    <button ng-click = 'zamien_name();'>zmien napis</button>
+      {{ile}}
+    <p> {{toby}} </>
+    <ul ng-repeat="user in buy_list | filter : {state: 1}" >
+        <p> > </>
+        <button ng-click="loadEmail(user);">Buy</button>
+        {{user.quantity}} {{user.unit}} {{user.name}}
+    </ul>
+    <p> -------Already bought:</p>
+    <ul ng-repeat="user in buy_list | filter : {state: 0}" >
+      {{user.quantity}} {{user.unit}} {{user.name}}
+    </ul>
+ {{rootFolders}}
+</body>
+
+</html>

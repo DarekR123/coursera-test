@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="my_module">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>My first AngularJS Assigment</title>
+  </head>
+  <body>
+
+    <h1>Shopping List Check Off</h1>
+
+  <!--  <h2>To buy</h2> -->
+
+    <div ng-controller='ToBuyController as itemAdder'>
+        <h2 ng-if = "itemAdder.wy"> To Buy </h2>
+        <h2 ng-if = "itemAdder.w"> Everything is bought </h2>
+
+
+       <li ng-repeat="item in itemAdder.items">
+
+          {{ item.quantity }} of {{ item.name }}
+          <button ng-click="itemAdder.aremoveItem($index);">Bought</button>
+
+        </li>
+        <p>----------------------------------------------------</p>
+        <h2 ng-if = "itemAdder.w2"> Nothing bought yet </h2>
+        <h2 ng-if = "itemAdder.wy2"> Already Bought </h2>
+
+    </div>
+
+
+    <div ng-controller='AlreadyBoughtController as showList'>
+  <!--    <h2>Already bought</h2> -->
+
+        <li ng-repeat="item in showList.items">
+          Bought {{ item.quantity }} of {{ item.name }}
+        </li>
+    </div>
+  </body>
+</html>
