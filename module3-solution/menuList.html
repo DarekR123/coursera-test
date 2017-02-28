@@ -1,0 +1,8 @@
+<!--
+<h3>Title: {{myTitle}}</h3>
+<p>linia_1</p>
+it was working too -->
+<li ng-repeat = "item in items">
+  <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+  {{item.id}}| {{item.name}}| {{item.short_name}}| {{item.desc}}
+</li>
