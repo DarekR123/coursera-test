@@ -12,8 +12,8 @@ MainMenuAppControllerTest.$inject = ['items'];
 function MainMenuAppControllerTest(items) {
   var mainList = this;
   mainList.items = items.data;
-  console.log('kontroller - test');
-  console.log(items.data);
+  //console.log('kontroller - test');
+  //console.log(items.data);
 }
 
 })();
