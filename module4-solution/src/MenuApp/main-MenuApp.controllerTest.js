@@ -3,7 +3,7 @@
 
 angular.module('MenuApp')
 .controller('MainMenuAppControllerTest', MainMenuAppControllerTest)
-.constant('ApiBasePath', "http://davids-restaurant.herokuapp.com");
+.constant('ApiBasePath', "https://davids-restaurant.herokuapp.com");
 
 
 //MainMenuAppController.$inject = ['MenuDataService', 'items'];
