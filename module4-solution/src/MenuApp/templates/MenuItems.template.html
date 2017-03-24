@@ -1,0 +1,14 @@
+<ul>
+<!--  <p> druga opcja </p> -->
+<!--  <li ng-repeat="item in $ctrl.items"
+      ui-sref="mainList.itemDetail({itemId: $index})">
+  {{ item.name }} {{item.short_name}}
+</li> -->
+
+<li ng-repeat="item in $ctrl.items">
+
+  {{ item.name }} -- {{item.description}} -- large price {{item.price_large | currency:" $ "}}
+
+</li>
+
+</ul>
