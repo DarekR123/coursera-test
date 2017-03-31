@@ -19,7 +19,7 @@ function MenuDataService($http, ApiBasePath) {
         //http://davids-restaurant.herokuapp.com
       //url: ("http://davids-restaurant.herokuapp.com/categories.json")
       });
-      console.log('wszystkie kategorie');
+      console.log('wszystkie kategorie', response);
       //console.log(response);
       return response;
     };

@@ -1,0 +1,33 @@
+<h2>My registered Info</h2>
+
+<div ng-controller = 'SignUpController as regs'>
+
+<div ng-if = "regs.registered">
+  Firstname: {{ regs.fname}} <br>
+  Lastname: {{ regs.lname}} <br>
+  Email: {{ regs.e_mail}} <br>
+  Phone: {{ regs.phone }} <br>
+<div>
+  <img class="img-responsive" width="300" height="200" ng-src="{{regs.Path}}/images/{{regs.mymenu}}.jpg" alt="{{regs.mymenu}}">
+  Menu Category: {{regs.mymenu}} <br>
+  Name: {{regs.name}} <br>
+  Description: {{regs.description}} <br>
+</div>
+  <!--
+  <p>{{ regs.fname }}</p>
+  <p>{{ regs.lname }}</p>
+  <p>{{ regs.e_mail }}</p>
+  <p>{{ regs.phone }}</p>
+  <p>{{ regs.mymenu }}</p>
+-->
+</div>
+<div ng-if = "!regs.registered">
+  <p> No Data, please click the link to register ---->
+    <a ui-sref="public.myinfo">     Nothing Registeret Yet, Please sing Up! </a>
+  </p>
+</div>
+
+
+
+
+</div>
