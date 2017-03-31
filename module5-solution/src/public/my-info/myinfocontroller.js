@@ -7,6 +7,7 @@ RegistrationController.$inject = ['DataService'];
 function RegistrationController(DataService) {
   var reg = this;
   //reg.user.phone = '###-###-####';
+  
 
   reg.submit = function () {
 
